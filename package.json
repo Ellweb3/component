@@ -1,0 +1,34 @@
+{
+  "name": "near",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.web.js",
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "start": "adalo dev",
+    "login": "adalo login",
+    "publish": "adalo publish"
+  },
+  "adalo": {
+    "logo": "./example-logo.png",
+    "displayName": "near",
+    "components": [
+      {
+        "name": "Comp",
+        "manifest": "./src/components/Comp/manifest.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@adalo/cli": "^0.0.44",
+    "react": "^16.9.0",
+    "react-art": "^16.6.0",
+    "react-dom": "^16.9.0",
+    "react-native-web": "^0.9.5"
+  },
+  "dependencies": {
+    "near-api-js": "^0.44.2",
+    "near-seed-phrase": "^0.2.0"
+  }
+}
